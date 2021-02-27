@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import retrieveUsers from "../utils/RandomUserAPI";
+import retrieveUsers from "../utils/api";
 import Container from "react-bootstrap/Container";
 import EmployeeList from "./ListOfEmployee";
 import SearchBar from "./Search";
