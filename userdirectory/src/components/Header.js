@@ -9,3 +9,12 @@ function Header() {
 }
 
 export default Header;
+
+// const styles = {
+//     jumbotron: {
+//       background: "#3c6e71",
+//       height: "250px",
+//       marginBottom: "30px",
+//       color: "white",
+//     },
+//   };
