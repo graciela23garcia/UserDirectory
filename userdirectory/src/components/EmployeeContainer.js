@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import retrieveUsers from "../utils/api";
+import randomUsers from "../utils/api";
 import Container from "react-bootstrap/Container";
 import EmployeeList from "./ListOfEmployee";
 import SearchBar from "./Search";
 import Header from "././Header";
 
-class EmployeeMain extends Component {
+class UsereMain extends Component {
   constructor() {
     super();
     this.state = {
@@ -31,11 +31,11 @@ class EmployeeMain extends Component {
   }
   // Random User API call
   getUsersApi = () => {
-    retrieveUsers()
+    randomUsers()
       .then((res) => this.setState({ employees: res.data.results }))
       .catch((err) => console.log(err));
   };
-  // filter through the array of employees and return names that contain the letters typed into the search box
+ 
   render() {
     let filterByName = this.state.employees.filter((employee) => {
       let name = `${employee.name.first} ${employee.name.last}`;
@@ -83,4 +83,4 @@ class EmployeeMain extends Component {
   }
 }
 
-export default EmployeeMain;
+export default UsereMain;

@@ -1,9 +1,9 @@
 import axios from "axios";
 
 const URL = "https://randomuser.me/api/?results=100&nat=us,dk,fr,gb";
-function retrieveUsers() {
+function randomUsers() {
   return axios.get(URL);
 }
-export default retrieveUsers;
+export default randomUsers;
 
 //this is the api to get random users
