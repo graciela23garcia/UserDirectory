@@ -5,7 +5,7 @@ import randomUsers from "../utils/api";
 import Container from "react-bootstrap/Container";
 import EmployeeList from "./ListOfEmployee";
 import SearchBar from "./Search";
-import Header from "././Header";
+import Header from "./Header";
 
 class UsereMain extends Component {
   constructor() {

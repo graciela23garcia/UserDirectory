@@ -4,7 +4,7 @@ import React from "react";
 
 export default function EmployeeList(props) {
   // Font Awesome icon for sorting
-  const icon = <FontAwesomeIcon icon={faSortAlphaDownAlt} />;
+  // const icon = <FontAwesomeIcon icon={faSortAlphaDownAlt} />;
   // Saving employee props to a variable so it's easier to use
   const employees = props.employees;
   console.log(employees);
@@ -53,7 +53,7 @@ export default function EmployeeList(props) {
           <th>
             Name
             <button onClick={props.handleSort} className="btn">
-              {icon}
+              {/* {icon} */}
             </button>
           </th>
           <th>Image</th>
